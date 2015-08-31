@@ -22,6 +22,7 @@
 
 - (void) setup
 {
+    // !!!:这里不要将一个单元的数据拆开
     self.nameArray = @[@"Jack",@"Tomic"];
     self.messageArray = @[@"Rainning....",@"See u."];
 }
