@@ -11,6 +11,10 @@
 @interface User : NSObject
 
 @property (readwrite,nonatomic) NSString *name;
+@property (nonatomic) NSURL *avatarUrl;
 
 - (id)init:(NSString *) name;
+
+- (NSMutableArray *)users;
+
 @end

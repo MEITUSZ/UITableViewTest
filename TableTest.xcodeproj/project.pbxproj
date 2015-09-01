@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4998480A1B9544CB0063DCA2 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 499848091B9544CB0063DCA2 /* Message.m */; };
+		499848181B95AD1A0063DCA2 /* ChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 499848171B95AD1A0063DCA2 /* ChatTableViewCell.m */; };
+		4998481B1B95C62B0063DCA2 /* ImageDownLoadHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4998481A1B95C62B0063DCA2 /* ImageDownLoadHelper.m */; };
 		49EEAE451B93F61E00F21450 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EEAE441B93F61E00F21450 /* main.m */; };
 		49EEAE481B93F61E00F21450 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EEAE471B93F61E00F21450 /* AppDelegate.m */; };
 		49EEAE4B1B93F61E00F21450 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EEAE4A1B93F61E00F21450 /* ViewController.m */; };
@@ -30,6 +33,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		499848081B9544CB0063DCA2 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		499848091B9544CB0063DCA2 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		499848161B95AD1A0063DCA2 /* ChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewCell.h; sourceTree = "<group>"; };
+		499848171B95AD1A0063DCA2 /* ChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewCell.m; sourceTree = "<group>"; };
+		499848191B95C62B0063DCA2 /* ImageDownLoadHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownLoadHelper.h; sourceTree = "<group>"; };
+		4998481A1B95C62B0063DCA2 /* ImageDownLoadHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownLoadHelper.m; sourceTree = "<group>"; };
 		49EEAE3F1B93F61E00F21450 /* TableTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EEAE431B93F61E00F21450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49EEAE441B93F61E00F21450 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -69,6 +78,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4998480D1B9584AD0063DCA2 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				499848191B95C62B0063DCA2 /* ImageDownLoadHelper.h */,
+				4998481A1B95C62B0063DCA2 /* ImageDownLoadHelper.m */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		4998480E1B95887B0063DCA2 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				49EEAE491B93F61E00F21450 /* ViewController.h */,
+				49EEAE4A1B93F61E00F21450 /* ViewController.m */,
+				49EEAE6E1B93FA5B00F21450 /* ChatListTableViewController.h */,
+				49EEAE6F1B93FA5B00F21450 /* ChatListTableViewController.m */,
+				49EEAE711B943D8000F21450 /* MemberListTableViewController.h */,
+				49EEAE721B943D8000F21450 /* MemberListTableViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		499848121B95AB820063DCA2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				499848161B95AD1A0063DCA2 /* ChatTableViewCell.h */,
+				499848171B95AD1A0063DCA2 /* ChatTableViewCell.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		49EEAE361B93F61E00F21450 = {
 			isa = PBXGroup;
 			children = (
@@ -92,15 +132,12 @@
 			children = (
 				49EEAE461B93F61E00F21450 /* AppDelegate.h */,
 				49EEAE471B93F61E00F21450 /* AppDelegate.m */,
-				49EEAE491B93F61E00F21450 /* ViewController.h */,
-				49EEAE4A1B93F61E00F21450 /* ViewController.m */,
-				49EEAE6E1B93FA5B00F21450 /* ChatListTableViewController.h */,
-				49EEAE6F1B93FA5B00F21450 /* ChatListTableViewController.m */,
-				49EEAE711B943D8000F21450 /* MemberListTableViewController.h */,
-				49EEAE721B943D8000F21450 /* MemberListTableViewController.m */,
 				49EEAE4C1B93F61E00F21450 /* Main.storyboard */,
 				49EEAE4F1B93F61E00F21450 /* Images.xcassets */,
 				49EEAE511B93F61E00F21450 /* LaunchScreen.xib */,
+				499848121B95AB820063DCA2 /* view */,
+				4998480E1B95887B0063DCA2 /* controller */,
+				4998480D1B9584AD0063DCA2 /* util */,
 				49EEAE741B947D0000F21450 /* model */,
 				49EEAE421B93F61E00F21450 /* Supporting Files */,
 			);
@@ -138,6 +175,8 @@
 			children = (
 				49EEAE761B947DD700F21450 /* User.h */,
 				49EEAE771B947DD700F21450 /* User.m */,
+				499848081B9544CB0063DCA2 /* Message.h */,
+				499848091B9544CB0063DCA2 /* Message.m */,
 			);
 			name = model;
 			path = ..;
@@ -244,8 +283,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				49EEAE731B943D8000F21450 /* MemberListTableViewController.m in Sources */,
+				4998481B1B95C62B0063DCA2 /* ImageDownLoadHelper.m in Sources */,
 				49EEAE4B1B93F61E00F21450 /* ViewController.m in Sources */,
+				499848181B95AD1A0063DCA2 /* ChatTableViewCell.m in Sources */,
 				49EEAE781B947DD700F21450 /* User.m in Sources */,
+				4998480A1B9544CB0063DCA2 /* Message.m in Sources */,
 				49EEAE481B93F61E00F21450 /* AppDelegate.m in Sources */,
 				49EEAE451B93F61E00F21450 /* main.m in Sources */,
 				49EEAE701B93FA5B00F21450 /* ChatListTableViewController.m in Sources */,
@@ -373,7 +415,6 @@
 		49EEAE631B93F61E00F21450 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TableTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -383,7 +424,6 @@
 		49EEAE641B93F61E00F21450 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TableTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,6 +483,7 @@
 				49EEAE641B93F61E00F21450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49EEAE651B93F61E00F21450 /* Build configuration list for PBXNativeTarget "TableTestTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +492,7 @@
 				49EEAE671B93F61E00F21450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

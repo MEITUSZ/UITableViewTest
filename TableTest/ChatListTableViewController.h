@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ImageDownLoadHelper.h"
 
 @interface ChatListTableViewController : UITableViewController
 

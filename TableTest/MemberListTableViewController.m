@@ -30,12 +30,9 @@
 
 - (void)setup
 {
-    usersArray = [[NSMutableArray alloc]init];
-    
-    [usersArray addObject:NEW_USER(@"Jack")];
-    [usersArray addObject:NEW_USER(@"Andrew")];
-    [usersArray addObject:NEW_USER(@"Tomic")];
-    [usersArray addObject:NEW_USER(@"Anny")];
+    //初始化用户数据
+    User *user = [[User alloc]init];
+    usersArray = user.users;
     
     self.collation = [UILocalizedIndexedCollation currentCollation];
     
